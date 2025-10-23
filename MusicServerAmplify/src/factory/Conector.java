@@ -1,16 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package factory;
 import java.sql.*; 
-// esse import importa todas as bibliotecas
-// necessárias para conectar no banco
 
-/**
- *
- * @author herrmann
- */
 public class Conector {
     // esse objeto guarda a conexão com
     // o banco
@@ -22,9 +13,9 @@ public class Conector {
     public static Connection getConnection(){
         try {
            String url = "jdbc:mysql://localhost:3306/";
-           String banco = "petshop";
+           String banco = "sistema_musica";
            String usuario = "root";
-           String senha = "aluno@LP3";
+           String senha = "";
            
            con = DriverManager.getConnection(url+banco,usuario,senha);
            
